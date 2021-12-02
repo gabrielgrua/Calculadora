@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(12, 161, 62);
+    font-family: 'Cookie', Arial, Helvetica, sans-serif;
+}
+
+.calculadora {
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    border: 2px solid #bbb;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    margin: 100px auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+}
+
+#resultado{
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+}
+
+#resultado:hover {
+    border: 1px solid #bbb;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.botoes{
+    margin-top: 10px;
+    display: grid;
+    max-width: 500px;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(5, 60px);
+    column-gap: 5px;
+    row-gap: 5px;
+    
+}
+#igual{
+    grid-column: 4 / 5;
+    grid-row: 3 / 6;
+    background-color: rgb(37, 224, 99);
+    color: #fff;
+}
+
+.botao {
+    border: 1px solid #bbb;
+    font-size: 30px;
+    color: #333;
+    font-family: 'Cookie';
+    font-weight: bold;
+}
+
+.botao:hover {
+    border: 1px solid #bbb;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
